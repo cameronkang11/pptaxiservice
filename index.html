@@ -1,301 +1,411 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mr. Tommy — Let's Holidays | Taxi & Tour · Phnom * Penh</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          brand: { DEFAULT: '#F26522', dark: '#D9531E' },
-          royal: { DEFAULT: '#1D4ED8', dark: '#173BA8' }
-        },
-        fontFamily: { display: ['"Baloo 2"', 'cursive'] }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phnom Penh Taxi Service & Tours | Mr. Tommy | Cambodia</title>
+  <meta name="description"
+    content="Book a reliable Phnom Penh taxi service with Mr. Tommy. Airport transfers, hotel pickup, private tours, Royal Palace, Silk Island, Russian Market and Cambodia travel experiences.">
+  <meta name="keywords"
+    content="Phnom Penh taxi, Phnom Penh taxi service, Phnom Penh airport taxi, Phnom Penh airport transfer, Cambodia taxi, taxi in Phnom Penh, Phnom Penh private driver, Phnom Penh tours, Phnom Penh city tour, Cambodia private tour, Phnom Penh sightseeing, Royal Palace Phnom Penh, Silk Island tour, Russian Market Phnom Penh, Cambodia travel, Mr Tommy taxi">
+  <meta name="author" content="Mr. Tommy - Let's Holidays">
+  <link rel="canonical" href="https://www.pptaxiservice.me/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Phnom Penh Taxi Service & Tours | Mr. Tommy">
+  <meta property="og:description"
+    content="Reliable Phnom Penh taxi service, airport transfers and private tours with Mr. Tommy.">
+  <meta property="og:url" content="https://www.pptaxiservice.me/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Let's Holidays">
+  <meta property="og:image" content="https://www.pptaxiservice.me/IMG_1924.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#241C15',
+            paper: '#F6F1E6',
+            gold: '#C79A3D',
+            'gold-deep': '#A87C27',
+            saffron: '#B0472B',
+            river: '#1F5C56',
+            muted: '#6E6355',
+            line: '#E4DAC7',
+          },
+          fontFamily: {
+            display: ['"Fraunces"', 'serif'],
+            body: ['"Public Sans"', 'sans-serif'],
+          }
+        }
       }
     }
-  }
-</script>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-  html { font-family: 'Plus Jakarta Sans', sans-serif; }
-  .font-display { font-family: 'Baloo 2', cursive; }
-  body { background: #FFF9F2; } /* warm paper */
+  </script>
+  <link rel="stylesheet" href="css/style.css">
 
-  /* wavy divider */
-  .wave { display: block; width: 100%; height: 40px; }
-
-  /* polaroid sticker cards */
-  .polaroid { background: #fff; padding: 10px 10px 14px; box-shadow: 0 8px 20px rgba(23,59,168,.15); transition: transform .35s ease, box-shadow .35s ease; }
-  .polaroid:hover { transform: rotate(0deg) scale(1.05) !important; box-shadow: 0 16px 30px rgba(242,101,34,.3); z-index: 10; }
-  .tape { position: absolute; top: -10px; left: 50%; transform: translateX(-50%) rotate(-4deg); width: 70px; height: 22px; background: rgba(242,101,34,.35); }
-
-  /* dashed flight path */
-  @keyframes dash { to { stroke-dashoffset: -24; } }
-  .flight-path { stroke-dasharray: 8 8; animation: dash 1.2s linear infinite; }
-
-  /* marquee */
-  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-  .marquee-track { animation: marquee 22s linear infinite; }
-
-  /* fade-up reveal */
-  .fade-up { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
-  .fade-up.visible { opacity: 1; transform: translateY(0); }
-
-  /* boarding pass perforation */
-  .perf { background-image: radial-gradient(circle at 50% 50%, #FFF9F2 6px, transparent 6px); background-size: 24px 24px; background-repeat: repeat-y; }
-
-  .sticker { border: 3px solid #173BA8; box-shadow: 4px 4px 0 #173BA8; }
-</style>
 </head>
-<body class="text-gray-800 overflow-x-hidden">
 
-<!-- ============ TOP MARQUEE STRIP ============ -->
-<div class="bg-royal-dark text-white text-xs font-bold py-2 overflow-hidden">
-  <div class="marquee-track flex whitespace-nowrap gap-10 w-max">
-    <span>🚕 TAXI SERVICE</span><span>⛩ ROYAL PALACE</span><span>🔫 SHOOTING RANGE</span><span>🏝 SILK ISLAND</span><span>🛩 AIRPORT SHUTTLE</span><span>🛍 RUSSIAN MARKET</span><span>📞 +855 71 876 2178</span>
-    <span>🚕 TAXI SERVICE</span><span>⛩ ROYAL PALACE</span><span>🔫 SHOOTING RANGE</span><span>🏝 SILK ISLAND</span><span>🛩 AIRPORT SHUTTLE</span><span>🛍 RUSSIAN MARKET</span><span>📞 +855 71 876 2178</span>
-  </div>
-</div>
+<body class="antialiased">
 
-<!-- ============ NAVBAR ============ -->
-<header class="sticky top-0 z-50 bg-brand border-b-4 border-royal-dark">
-  <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-    <a href="#" class="sticker bg-white rounded-xl px-4 py-1 font-display font-extrabold text-xl text-royal-dark rotate-[-2deg]">MR. TOMMY</a>
-    <ul id="menu" class="hidden md:flex gap-6 text-white font-bold text-sm items-center">
-      <li><a href="#tours" class="hover:text-royal-dark transition">Destinations</a></li>
-      <li><a href="#ticket" class="hover:text-royal-dark transition">Book Ticket</a></li>
-      <li><a href="#adventure" class="hover:text-royal-dark transition">Shooting Range</a></li>
-      <li><a href="tel:+855718762178" class="sticker bg-royal-dark rounded-xl px-4 py-2 hover:bg-royal transition">📞 +855 71 876 2178</a></li>
-    </ul>
-    <button id="burger" class="md:hidden text-white text-2xl font-display">☰</button>
-  </nav>
-  <ul id="mobileMenu" class="md:hidden hidden flex-col gap-4 px-6 pb-5 text-white font-bold">
-    <li><a href="#tours">Destinations</a></li>
-    <li><a href="#ticket">Book Ticket</a></li>
-    <li><a href="#adventure">Shooting Range</a></li>
-  </ul>
-</header>
-
-<!-- ============ HERO (poster style) ============ -->
-<section class="relative bg-brand pt-14 pb-24">
-  <!-- dashed flight path -->
-  <svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 1200 500">
-    <path class="flight-path" d="M -50 420 C 250 250, 450 480, 700 300 S 1050 180, 1300 240" fill="none" stroke="#173BA8" stroke-width="4"/>
-  </svg>
-  <div class="relative max-w-6xl mx-auto px-6 text-center">
-    <span class="inline-block bg-white text-royal-dark font-display font-bold px-5 py-1 rounded-full rotate-[-2deg] sticker text-sm mb-6 fade-up">🚕 PHNOM PENH · CAMBODIA</span>
-    <h1 class="fade-up font-display font-extrabold leading-[0.95] text-6xl md:text-8xl">
-      <span class="text-royal-dark drop-shadow-[3px_3px_0_#fff]">LET'S</span><br>
-      <span class="text-white drop-shadow-[4px_4px_0_#173BA8]">HOLIDAYS</span>
-    </h1>
-    <p class="fade-up mt-6 text-white font-semibold max-w-md mx-auto">Discover amazing destinations and unforgettable experiences with trusted travel services.</p>
-
-    <div class="fade-up mt-8 flex flex-wrap justify-center gap-4">
-      <a href="#ticket" class="sticker bg-white text-royal-dark font-display font-extrabold text-lg px-8 py-3 rounded-2xl hover:bg-royal hover:text-white transition">BOOK NOW ✈</a>
-      <a href="#tours" class="font-display font-extrabold text-lg px-8 py-3 rounded-2xl border-4 border-white text-white hover:bg-white/10 transition">SEE DESTINATIONS</a>
-    </div>
-
-    <!-- tilted polaroids row -->
-    <div class="fade-up mt-14 flex flex-wrap justify-center gap-6">
-      <div class="polaroid relative w-40 md:w-52 rotate-[-6deg] rounded-sm">
-        <span class="tape"></span>
-        <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=500&q=80" class="h-32 md:h-40 w-full object-cover" alt="Royal Palace">
-        <p class="font-display font-bold text-sm mt-2 text-royal-dark">ROYAL PALACE</p>
-      </div>
-      <div class="polaroid relative w-40 md:w-52 rotate-[3deg] rounded-sm md:-mt-4">
-        <span class="tape"></span>
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=80" class="h-32 md:h-40 w-full object-cover" alt="Silk Island">
-        <p class="font-display font-bold text-sm mt-2 text-royal-dark">SILK ISLAND</p>
-      </div>
-      <div class="polaroid relative w-40 md:w-52 rotate-[7deg] rounded-sm">
-        <span class="tape"></span>
-        <img src="https://images.unsplash.com/photo-1527631741860-0c90ad79c7a5?w=500&q=80" class="h-32 md:h-40 w-full object-cover" alt="Tour">
-        <p class="font-display font-bold text-sm mt-2 text-royal-dark">ADVENTURE TOURS</p>
+  <!-- NAV -->
+  <header class="border-b border-line sticky top-0 bg-paper/95 backdrop-blur z-50">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-baseline gap-2">
+        <span class="font-display text-2xl font-700 text-ink">PP Taxi Service</span>
+      </a>
+      <!-- <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink">
+      <a href="#taxi" class="hover:text-saffron transition-colors">Taxi &amp; Transfers</a>
+      <a href="#destinations" class="hover:text-saffron transition-colors">Destinations</a>
+      <a href="#tommy" class="hover:text-saffron transition-colors">About Tommy</a>
+      <a href="#book" class="hover:text-saffron transition-colors">Contact</a>
+    </nav> -->
+      <div class="flex items-center gap-3">
+        <!-- <a href="tel:+85571876217" class="hidden sm:block text-sm font-semibold text-ink">+855 71-876-2178</a> -->
+        <a href="#book"
+          class="bg-saffron text-paper text-sm font-semibold px-4 py-2.5 rounded hover:bg-ink transition-colors">Book
+          now</a>
       </div>
     </div>
-  </div>
-  <svg class="wave absolute -bottom-px left-0" viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0,20 C240,45 480,0 720,20 C960,40 1200,0 1440,20 L1440,40 L0,40 Z" fill="#FFF9F2"/></svg>
-</section>
+  </header>
 
-<!-- ============ TAXI SERVICE STICKERS ============ -->
-<section class="py-20">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="fade-up font-display font-extrabold text-4xl md:text-5xl text-center text-royal-dark">TAXI <span class="text-brand">SERVICE</span></h2>
-    <div class="grid md:grid-cols-3 gap-8 mt-14">
-      <div class="fade-up bg-white sticker rounded-3xl p-8 rotate-[-1deg] hover:rotate-0 transition">
-        <div class="w-16 h-16 rounded-full bg-royal text-white flex items-center justify-center text-3xl font-display mb-4">✈</div>
-        <h3 class="font-display font-extrabold text-xl text-royal-dark">Professional Service</h3>
-        <p class="text-gray-500 text-sm mt-2">Licensed local driver, clean A/C car, always on time — hotel & airport pickup.</p>
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto px-6 pt-14 pb-20 grid md:grid-cols-12 gap-10 items-center">
+    <div class="md:col-span-6 order-2 md:order-1">
+      <p class="text-saffron text-sm font-semibold mb-4 tracking-wide">Phnom Penh, Cambodia</p>
+      <h1 class="font-display text-[3.4rem] leading-[1.02] font-600 text-ink mb-6">
+        See Phnom Penh the way a local would show it to you
+      </h1>
+      <p class="text-lg text-muted max-w-md mb-8 leading-relaxed">
+        Mr. Tommy drives, guides, and plans the day — airport pickups, temple visits, river sunsets — in one comfortable
+        car, at a price you agree on before you get in.
+      </p>
+      <div class="flex flex-wrap items-center gap-4 mb-10">
+        <a href="#book"
+          class="bg-gold text-ink font-semibold px-6 py-3.5 rounded hover:bg-gold-deep transition-colors">Book now</a>
+        <a href="#destinations"
+          class="text-ink font-semibold px-2 py-3.5 border-b-2 border-ink hover:border-saffron hover:text-saffron transition-colors">See
+          destinations</a>
       </div>
-      <div class="fade-up bg-white sticker rounded-3xl p-8 rotate-[1.5deg] hover:rotate-0 transition">
-        <div class="w-16 h-16 rounded-full bg-royal text-white flex items-center justify-center text-3xl font-display mb-4">🌏</div>
-        <h3 class="font-display font-extrabold text-xl text-royal-dark">Best Destinations</h3>
-        <p class="text-gray-500 text-sm mt-2">Temples, markets, islands & museums — Mr. Tommy knows them all.</p>
-      </div>
-      <div class="fade-up bg-white sticker rounded-3xl p-8 rotate-[-1.5deg] hover:rotate-0 transition">
-        <div class="w-16 h-16 rounded-full bg-royal text-white flex items-center justify-center text-3xl font-display mb-4">🎫</div>
-        <h3 class="font-display font-extrabold text-xl text-royal-dark">Easy Booking</h3>
-        <p class="text-gray-500 text-sm mt-2">Phone, Telegram, WhatsApp or WeChat — confirmed in minutes.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DESTINATIONS (PDF pill labels) ============ -->
-<section id="tours" class="py-20 bg-white border-y-4 border-royal-dark/10 scroll-mt-24">
-  <div class="max-w-7xl mx-auto px-6">
-    <h2 class="fade-up font-display font-extrabold text-4xl md:text-5xl text-center text-royal-dark">TOP <span class="text-brand">DESTINATIONS</span></h2>
-
-    <div id="destGrid" class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-14"></div>
-    <p class="text-center text-gray-400 text-xs mt-8">* Replace image URLs with your own destination photos.</p>
-  </div>
-</section>
-
-<!-- ============ BOARDING PASS BOOKING TICKET ============ -->
-<section id="ticket" class="py-24 scroll-mt-24">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="fade-up font-display font-extrabold text-4xl md:text-5xl text-center text-royal-dark mb-12">BOOK YOUR <span class="text-brand">TRIP</span></h2>
-
-    <div class="fade-up flex flex-col md:flex-row shadow-2xl rounded-3xl overflow-hidden sticker">
-      <!-- main ticket -->
-      <div class="flex-1 bg-white p-8">
-        <div class="flex justify-between items-center border-b-2 border-dashed border-gray-300 pb-4 mb-6">
-          <span class="font-display font-extrabold text-royal-dark text-lg">MR. TOMMY AIRLINES 😄</span>
-          <span class="bg-brand text-white text-xs font-bold px-3 py-1 rounded-full">BOARDING PASS</span>
-        </div>
-        <form id="bookingForm" class="space-y-4">
-          <input type="text" placeholder="📍 Pickup (hotel / airport)" required class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:border-brand outline-none font-semibold text-sm">
-          <select required class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:border-brand outline-none font-semibold text-sm">
-            <option value="">Destination…</option>
-            <option>Royal Palace & National Museum</option>
-            <option>Toul Sleng & Killing Fields</option>
-            <option>Silk Island</option>
-            <option>Oudong Mountain</option>
-            <option>Ta Prohm & Tonle Bati</option>
-            <option>Shooting Range</option>
-            <option>Full-day custom tour</option>
-          </select>
-          <div class="grid grid-cols-2 gap-4">
-            <input type="date" required class="border-2 border-gray-200 rounded-xl px-4 py-3 focus:border-brand outline-none font-semibold text-sm">
-            <select class="border-2 border-gray-200 rounded-xl px-4 py-3 focus:border-brand outline-none font-semibold text-sm">
-              <option>1–2 pax · Sedan</option><option>3–4 pax · SUV</option><option>5–8 pax · Van</option>
-            </select>
+      <div class="rule-dash max-w-md mb-6"></div>
+      <div class="grid grid-cols-3 gap-6 max-w-md">
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-river flex items-center justify-center shrink-0 mt-0.5">
+            <svg class="w-4 h-4 text-paper" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.5 19.5l6-6M22 2L14 10M22 2l-7 20-4-9-9-4 20-7z" />
+            </svg>
           </div>
-          <button type="submit" class="w-full bg-brand text-white font-display font-extrabold text-lg py-3.5 rounded-xl hover:bg-brand-dark transition">GET QUOTE →</button>
-          <p id="formMsg" class="hidden text-center text-green-600 font-bold text-sm">✅ Booking received! Mr. Tommy will confirm soon.</p>
-        </form>
-      </div>
-      <!-- stub -->
-      <div class="perf md:w-56 bg-royal-dark text-white p-6 flex md:flex-col justify-between items-center">
-        <div>
-          <p class="font-display font-extrabold text-2xl">PNH</p>
-          <p class="text-white/60 text-xs">Phnom Penh</p>
+          <p class="text-sm font-medium leading-tight">Professional service</p>
         </div>
-        <div class="text-3xl rotate-90 md:rotate-0">✈</div>
-        <div>
-          <p class="font-display font-extrabold text-2xl">FUN</p>
-          <p class="text-white/60 text-xs">Your Holiday</p>
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-river flex items-center justify-center shrink-0 mt-0.5">
+            <svg class="w-4 h-4 text-paper" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="9" />
+              <path stroke-linecap="round"
+                d="M3 12h18M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z" />
+            </svg>
+          </div>
+          <p class="text-sm font-medium leading-tight">Best destinations</p>
         </div>
-        <p class="hidden md:block text-white/60 text-xs mt-4 text-center">+855 71 876 2178</p>
+        <div class="flex items-start gap-3">
+          <div class="w-9 h-9 rounded-full bg-river flex items-center justify-center shrink-0 mt-0.5">
+            <svg class="w-4 h-4 text-paper" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="4" y="4" width="16" height="16" rx="1" />
+              <path stroke-linecap="round" d="M8 9h8M8 13h5" />
+            </svg>
+          </div>
+          <p class="text-sm font-medium leading-tight">Easy booking</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ============ SHOOTING RANGE ============ -->
-<section id="adventure" class="py-20 bg-royal-dark text-white relative scroll-mt-24">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-    <div class="fade-up">
-      <span class="inline-block bg-brand text-white font-display font-bold px-4 py-1 rounded-full rotate-[-2deg] text-sm mb-5">🔥 MOST BOOKED ADD-ON</span>
-      <h2 class="font-display font-extrabold text-4xl">SHOOTING RANGE EXPERIENCE</h2>
-      <ul class="mt-6 space-y-3 text-white/80 font-semibold text-sm">
-        <li>✅ M16 · AK-47 · PKM · RPG rocket launcher</li>
-        <li>✅ Hotel pickup & return included</li>
-        <li>✅ Safety briefing & instructor supervision</li>
-        <li>✅ Great photos for your memories</li>
-      </ul>
-      <a href="#ticket" class="inline-block mt-8 bg-brand font-display font-extrabold px-8 py-3 rounded-2xl hover:bg-brand-dark transition">BOOK THIS TOUR</a>
-    </div>
-    <div class="fade-up grid grid-cols-2 gap-4">
-      <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f?w=600&q=80" class="rounded-2xl h-40 w-full object-cover rotate-[-2deg] border-4 border-white/20" alt="">
-      <img src="https://images.unsplash.com/photo-1508020963102-c6c723be5764?w=600&q=80" class="rounded-2xl h-40 w-full object-cover rotate-[2deg] border-4 border-white/20 mt-6" alt="">
-      <img src="https://images.unsplash.com/photo-1527631741860-0c90ad79c7a5?w=600&q=80" class="rounded-2xl h-40 w-full object-cover rotate-[1deg] border-4 border-white/20" alt="">
-      <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=80" class="rounded-2xl h-40 w-full object-cover rotate-[-1deg] border-4 border-white/20 mt-6" alt="">
-    </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section class="py-20 bg-brand text-center relative">
-  <svg class="wave absolute top-0 left-0 rotate-180" viewBox="0 0 1440 40" preserveAspectRatio="none"><path d="M0,20 C240,45 480,0 720,20 C960,40 1200,0 1440,20 L1440,40 L0,40 Z" fill="#173BA8"/></svg>
-  <h2 class="fade-up font-display font-extrabold text-4xl text-white drop-shadow-[3px_3px_0_#173BA8]">READY FOR YOUR TRIP?</h2>
-  <p class="mt-3 text-white font-bold">📞 <a href="tel:+855718762178" class="underline">+855 71 876 2178</a></p>
-  <div class="mt-6 flex justify-center gap-4">
-    <a href="#" class="bg-white text-royal-dark font-bold px-6 py-3 rounded-full hover:bg-royal hover:text-white transition">✈ Telegram</a>
-    <a href="#" class="bg-white text-royal-dark font-bold px-6 py-3 rounded-full hover:bg-royal hover:text-white transition">💬 WhatsApp</a>
-    <a href="#" class="bg-white text-royal-dark font-bold px-6 py-3 rounded-full hover:bg-royal hover:text-white transition">🟢 WeChat</a>
-  </div>
-</section>
-<footer class="bg-royal-dark text-white/60 text-sm py-8 text-center font-semibold">
-  © 2026 Mr. Tommy — Let's Holidays · Phnom Penh, Cambodia 🇰🇭
-</footer>
-
-<!-- ============ JS ============ -->
-<script>
-  // Mobile menu
-  const burger = document.getElementById('burger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  burger.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
-
-  // Form
-  document.getElementById('bookingForm').addEventListener('submit', e => {
-    e.preventDefault();
-    document.getElementById('formMsg').classList.remove('hidden');
-    e.target.querySelectorAll('input').forEach(i => i.value = '');
-  });
-
-  // Destinations — PDF pill-label style
-  const destinations = [
-    ['Royal Palace','https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=500&q=80'],
-    ['National Museum','https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500&q=80'],
-    ['Independence Monument','https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?w=500&q=80'],
-    ['Wat Phnom','https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=500&q=80'],
-    ['Golden Temple','https://images.unsplash.com/photo-1549989476-139f97b10427?w=500&q=80'],
-    ['Golden Boat','https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&q=80'],
-    ['Ta Prohm & Tonle Bati','https://images.unsplash.com/photo-1598524374912-6b19e2f7d0b0?w=500&q=80'],
-    ['Oudong Mountain','https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500&q=80'],
-    ['Chisor Mountain','https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80'],
-    ['Monkey Pagoda','https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=500&q=80'],
-    ['Phnom Ta Mao Zoo','https://images.unsplash.com/photo-1549366021-9f761d450615?w=500&q=80'],
-    ['Phnom Penh Safari','https://images.unsplash.com/photo-1534567153574-2b12153a87f0?w=500&q=80'],
-    ['Silk Island','https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&q=80'],
-    ['Koh Norea','https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500&q=80'],
-    ['River Boat','https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&q=80'],
-    ['Central Market','https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=500&q=80'],
-    ['Russian Market','https://images.unsplash.com/photo-1528181304800-259b08848526?w=500&q=80'],
-    ['Toul Sleng Museum','https://images.unsplash.com/photo-1553425306-323d0b1e2a0c?w=500&q=80'],
-    ['Killing Fields','https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=500&q=80'],
-    ['Shooting Range','https://images.unsplash.com/photo-1595590424283-b8f17842773f?w=500&q=80'],
-    ['Airport Shuttle','https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500&q=80'],
-    ['Garden City Water Park','https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=500&q=80'],
-    ['PH Euro Park','https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?w=500&q=80'],
-    ['Custom Day Tour','https://images.unsplash.com/photo-1527631741860-0c90ad79c7a5?w=500&q=80']
-  ];
-  document.getElementById('destGrid').innerHTML = destinations.map(([name, img]) => `
-    <div class="fade-up">
-      <div class="rounded-2xl overflow-hidden border-[3px] border-royal-dark/20 hover:border-brand transition shadow-sm">
-        <img src="${img}" alt="${name}" class="h-32 md:h-40 w-full object-cover hover:scale-105 transition duration-500" loading="lazy">
+    <div class="md:col-span-6 order-1 md:order-2 relative h-[440px]">
+      <img src="./img/IMG_1924.png" alt="Mr. Tommy, your driver and guide in Phnom Penh"
+        class="settle-1 absolute left-0 top-0 w-[62%] h-[78%] object-cover rounded-sm shadow-[0_18px_40px_-12px_rgba(36,28,21,0.35)]"
+        style="--rot:-2deg">
+      <img src="./img/royal.jpg" alt="Royal Palace, Phnom Penh"
+        class="settle-2 absolute right-0 top-2 w-[48%] h-[46%] object-cover rounded-sm border-4 border-paper shadow-[0_14px_30px_-10px_rgba(36,28,21,0.4)]"
+        style="--rot:3deg">
+      <img src="./img/koh.jpg" alt="Sunset river cruise along the Tonle Sap"
+        class="settle-3 absolute right-4 bottom-0 w-[52%] h-[42%] object-cover rounded-sm border-4 border-paper shadow-[0_14px_30px_-10px_rgba(36,28,21,0.4)]"
+        style="--rot:-3deg">
+      <!-- <div class="absolute left-[8%] bottom-0 bg-paper border border-line rounded-sm px-4 py-3 shadow-[0_10px_24px_-8px_rgba(36,28,21,0.3)] flex items-center gap-3">
+      <img src="data:image/jpeg;base64,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" alt="Toyota Prius taxi" class="w-16 h-auto">
+      <div>
+        <p class="text-xs text-muted leading-tight">Your ride</p>
+        <p class="text-sm font-semibold leading-tight">Clean, A/C sedan</p>
       </div>
-      <p class="mt-3 mx-auto w-max max-w-full border-[3px] border-royal-dark rounded-full px-4 py-1.5 text-xs md:text-sm font-display font-extrabold text-royal-dark text-center bg-white">${name.toUpperCase()}</p>
-    </div>`).join('');
+    </div> -->
+    </div>
+  </section>
 
-  // Scroll reveal
-  const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('visible')), { threshold: .12 });
-  document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
-</script>
+  <!-- ABOUT TOMMY -->
+  <section id="tommy" class="border-t border-line bg-white/40">
+    <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-12 gap-10 items-center">
+      <div class="md:col-span-4">
+        <img src="./img/IMG_1924.png" alt="Mr. Tommy"
+          class="rounded-sm w-full max-w-xs mx-auto md:mx-0 shadow-[0_16px_34px_-14px_rgba(36,28,21,0.35)]">
+      </div>
+      <div class="md:col-span-8">
+        <p class="text-saffron text-sm font-semibold mb-3">Your driver &amp; guide</p>
+        <h2 class="font-display text-4xl font-600 text-ink leading-tight mb-4">Mr. Tommy</h2>
+        <p class="text-muted text-lg leading-relaxed max-w-2xl mb-4">
+          Born and raised near Phnom Penh, Tommy has spent years driving visitors between the city's temples, markets,
+          and riverside — and just as many years learning which viewpoint catches the sunset best, and which market
+          stall makes the better iced coffee.
+        </p>
+        <p class="text-muted text-lg leading-relaxed max-w-2xl">
+          Every trip is planned around you: a straight airport transfer, a full day of temples, or a slow evening cruise
+          on the water. One driver, one car, no handoffs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAXI & TRANSFERS -->
+  <section id="taxi" class="border-t border-line">
+    <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-12 gap-10 items-center">
+      <div class="md:col-span-6">
+        <img src="./img/CamAirport.webp" alt="Phnom Penh Airport"
+          class="rounded-sm w-full h-80 object-cover shadow-[0_16px_34px_-14px_rgba(36,28,21,0.3)]">
+      </div>
+      <div class="md:col-span-6">
+        <p class="text-saffron text-sm font-semibold mb-3">Taxi &amp; airport transfers</p>
+        <h2 class="font-display text-4xl font-600 text-ink leading-tight mb-4">Landing to hotel, sorted before you touch
+          down</h2>
+        <p class="text-muted text-lg leading-relaxed mb-8">
+          Send your flight details on WhatsApp or Telegram, and Tommy tracks the landing time — so the car is waiting
+          whether you're early, on time, or delayed.
+        </p>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-start gap-3">
+            <span class="w-2 h-2 rounded-full bg-gold mt-2 shrink-0"></span>
+            <p class="text-ink"><span class="font-semibold">Fixed price, agreed up front</span> — no meter surprises.
+            </p>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-2 h-2 rounded-full bg-gold mt-2 shrink-0"></span>
+            <p class="text-ink"><span class="font-semibold">Flight tracked</span> — Tommy adjusts pickup time
+              automatically.</p>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="w-2 h-2 rounded-full bg-gold mt-2 shrink-0"></span>
+            <p class="text-ink"><span class="font-semibold">City rides and day trips</span> — hourly or full-day hire
+              available.</p>
+          </li>
+        </ul>
+        <!-- <a href="#book" class="inline-block bg-ink text-paper font-semibold px-6 py-3.5 rounded hover:bg-river transition-colors">Book a transfer</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="border-t border-line bg-ink text-paper">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="grid md:grid-cols-12 gap-10 mb-12">
+        <h2 class="md:col-span-6 font-display text-4xl font-600 leading-tight">Where Tommy takes people</h2>
+        <p class="md:col-span-5 md:col-start-8 text-paper/60 text-lg leading-relaxed self-end">
+          Pick a few stops or let Tommy build the route — temples at sunrise, markets at midday, the river at dusk.
+        </p>
+      </div>
+
+      <div class="mb-14">
+        <p class="font-display text-2xl font-600 mb-6 text-gold">Temples &amp; landmarks</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <figure><img
+              src="data:image/jpeg;base64,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"
+              alt="Golden Temple" class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">Golden Temple</figcaption>
+          </figure>
+          <figure>
+            <img src="./img/Indenpendence .jpeg" alt="Independence Monument"
+              class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">Independence Monument</figcaption>
+          </figure>
+          <figure>
+            <img src="./img/Wat Phnom.webp" alt="Wat Phnom Daun Penh" class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">Wat Phnom Daun Penh</figcaption>
+          </figure>
+
+          <figure>
+            <img src="./img/the-national-museum-3.jpg" alt="National Museum"
+              class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">National Museum</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="mb-14">
+        <p class="font-display text-2xl font-600 mb-6 text-gold">City &amp; leisure</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <figure><img src="./img/euro-park-river.jpg" alt="PH Euro Park" class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">PH Euro Park</figcaption>
+          </figure>
+          <figure><img src="./img/kohrea.jpg" alt="Koh Norea" class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">Koh Norea</figcaption>
+          </figure>
+          <figure><img src="./img/pool-party-on-monday.jpg" alt="Garden City Water Park"
+              class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">Garden City Water Park</figcaption>
+          </figure>
+          <figure><img src="./img/Central Market.png" alt="Central Market" class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">Central Market</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="mb-14">
+        <p class="font-display text-2xl font-600 mb-6 text-gold">Nature, islands &amp; markets</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <figure><img src="./img/oudong.jpg" alt="Oudong Mountain" class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">Oudong Mountain</figcaption>
+          </figure>
+          <figure><img src="./img/Silk Island .jpg" alt="Silk Island" class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">Silk Island</figcaption>
+          </figure>
+          <figure><img src="./img/Russian.jpg" alt="Russian Market" class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">Russian Market</figcaption>
+          </figure>
+          <figure><img src="./img/Zoo.jpg" alt="Phnom Ta Mao Zoo" class="rounded-sm w-full h-40 object-cover mb-2">
+            <figcaption class="text-sm font-medium">Phnom Ta Mao Zoo</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-paper/15">
+        <p class="text-paper/50 text-sm mb-3">Also on request</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="border border-paper/25 rounded-full px-3 py-1.5 text-sm text-paper/80">Chisor Mountain</span>
+          <span class="border border-paper/25 rounded-full px-3 py-1.5 text-sm text-paper/80">Ta Prom &amp; Tonle
+            Bati</span>
+          <span class="border border-paper/25 rounded-full px-3 py-1.5 text-sm text-paper/80">Golden Boat</span>
+          <span class="border border-paper/25 rounded-full px-3 py-1.5 text-sm text-paper/80">Phnom Penh Safari</span>
+          <span class="border border-paper/25 rounded-full px-3 py-1.5 text-sm text-paper/80">Monkey Pagoda</span>
+          <span class="border border-paper/25 rounded-full px-3 py-1.5 text-sm text-paper/80">River sunset cruise</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORY & REMEMBRANCE (quiet, respectful treatment) -->
+  <section class="border-t border-line">
+    <div class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-12 gap-10 items-center">
+      <div class="md:col-span-5">
+        <img src="./img/TSG.avif" alt="Tuol Sleng Genocide Museum" class="rounded-sm w-full h-80 object-cover mb-6">
+      </div>
+      <div class="md:col-span-7">
+        <p class="text-muted text-sm font-semibold mb-3">History &amp; remembrance</p>
+        <h2 class="font-display text-3xl font-600 text-ink leading-tight mb-4">Tuol Sleng Genocide Museum &amp; the
+          Killing Fields</h2>
+        <p class="text-muted text-lg leading-relaxed max-w-2xl">
+          For visitors who want to understand Cambodia's more recent history, Tommy can arrange a quiet, unhurried visit
+          to these memorial sites. He'll go at your pace and give you space to take it in.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="adventure" class="py-20 bg-royal-dark text-ink relative scroll-mt-24">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <span
+          class="inline-block bg-gold text-ink font-display font-bold px-4 py-1 rounded-full rotate-[-2deg] text-sm mb-5">MOST
+          BOOKED ADD-ON</span>
+        <h2 class="font-display font-extrabold text-4xl">SHOOTING RANGE EXPERIENCE</h2>
+        <ul class="mt-6 space-y-3 text-ink/80 font-semibold text-sm">
+          <li>M16 · AK-47 · PKM · RPG rocket launcher</li>
+          <li>Hotel pickup & return included</li>
+          <li>Safety briefing & instructor supervision</li>
+          <li>Great photos for your memories</li>
+        </ul>
+        <!-- <a href="#ticket" class="inline-block mt-8 bg-brand font-display font-extrabold px-8 py-3 rounded-2xl hover:bg-brand-dark transition">BOOK THIS TOUR</a> -->
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <img src="./img/gun2.jpg" class="rounded-2xl h-40 w-full object-cover rotate-[-2deg] border-4 border-white/20"
+          alt="">
+        <img src="./img/gun6.jpg" class="rounded-2xl h-40 w-full object-cover rotate-[2deg] border-4 border-white/20 mt-6"
+          alt="">
+        <img src="./img/gun3.jpg" class="rounded-2xl h-40 w-full object-cover rotate-[1deg] border-4 border-white/20"
+          alt="">
+        <img src="./img/gun1.jpg" class="rounded-2xl h-40 w-full object-cover rotate-[-1deg] border-4 border-white/20 mt-6"
+          alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BOOKING / CONTACT -->
+  <section id="book" class="border-t border-line bg-river text-paper">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="grid md:grid-cols-12 gap-10">
+        <div class="md:col-span-5">
+          <h2 class="font-display text-4xl font-600 leading-tight mb-4">Let's plan your trip</h2>
+          <p class="text-paper/70 text-lg leading-relaxed mb-8 max-w-sm">
+            Message Tommy directly with your dates, flight details, or the places you want to see. He'll reply with a
+            plan and a price.
+          </p>
+          <a href="tel:+85571876217" class="flex items-center gap-3 mb-8">
+            <span class="w-10 h-10 rounded-full bg-paper/15 flex items-center justify-center shrink-0">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5a2 2 0 012-2h2.28a1 1 0 01.98.8l1.1 4.4a1 1 0 01-.55 1.14l-1.6.8a12 12 0 006.6 6.6l.8-1.6a1 1 0 011.14-.55l4.4 1.1a1 1 0 01.8.98V19a2 2 0 01-2 2h-1C9.6 21 3 14.4 3 6V5z" />
+              </svg>
+            </span>
+            <span class="text-lg font-semibold">+855 71-876-2178</span>
+          </a>
+        </div>
+
+        <div class="md:col-span-7 grid sm:grid-cols-3 gap-4">
+          <a href="https://t.me/Mr_Tommy7656" target="_blank"
+            class="bg-paper text-ink rounded-sm p-6 flex flex-col hover:bg-gold transition-colors">
+            <span class="w-10 h-10 rounded-full bg-river/10 flex items-center justify-center mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+              </svg>
+            </span>
+            <span class="font-semibold mb-1">Telegram</span>
+            <span class="text-sm text-muted">Message Tommy</span>
+          </a>
+          <a href="#" class="bg-paper text-ink rounded-sm p-6 flex flex-col hover:bg-gold transition-colors">
+            <span class="w-10 h-10 rounded-full bg-river/10 flex items-center justify-center mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 21l1.6-4.8A8 8 0 1112 20a8 8 0 01-6.4-1.6L3 21z" />
+              </svg>
+            </span>
+            <span class="font-semibold mb-1">WhatsApp</span>
+            <span class="text-sm text-muted">Fastest reply</span>
+          </a>
+          <a href="#" class="bg-paper text-ink rounded-sm p-6 flex flex-col hover:bg-gold transition-colors">
+            <span class="w-10 h-10 rounded-full bg-river/10 flex items-center justify-center mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9 6 9-6" />
+              </svg>
+            </span>
+            <span class="font-semibold mb-1">WeChat</span>
+            <span class="text-sm text-muted">For visitors from China</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-ink text-paper">
+    <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row justify-between gap-4 text-sm text-paper/50">
+      <p class="font-display text-lg text-paper/80">pptaxiservice</p>
+      <p>© 2026 pptaxiservice · Phnom Penh, Cambodia</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>

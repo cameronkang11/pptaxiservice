@@ -1,0 +1,22 @@
+
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Public Sans', sans-serif; background: #F6F1E6; color: #241C15; }
+  .font-display { font-family: '"Fraunces"', serif; }
+
+  .rule-gold { height: 2px; background: #dabf87; }
+  .rule-dash {
+    background-image: repeating-linear-gradient(to right, #C4B79C 0 7px, transparent 7px 14px);
+    height: 1px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .settle-1 { animation: settle .8s cubic-bezier(.22,1,.36,1) both; }
+    .settle-2 { animation: settle .8s cubic-bezier(.22,1,.36,1) .15s both; }
+    .settle-3 { animation: settle .8s cubic-bezier(.22,1,.36,1) .3s both; }
+    @keyframes settle {
+      0% { opacity: 0; transform: translateY(14px) rotate(var(--rot, 0deg)) scale(.97); }
+      100% { opacity: 1; transform: translateY(0) rotate(var(--rot, 0deg)) scale(1); }
+    }
+  }
+
+  :focus-visible { outline: 3px solid #1F5C56; outline-offset: 2px; }
