@@ -1,0 +1,108 @@
+[
+
+      {
+    "id": 1,
+    "name": "Golden Temple",
+    "category": "Temples & landmarks",
+    "location": "Phnom Penh, Cambodia",
+    "description": "Visit the Golden Temple, a stunning Buddhist temple in Phnom Penh.",
+    "image": "./img/goldentemp.jpg",
+    "about_description_1" : "The Golden Temple, also known as Wat Langka, is a beautiful Buddhist temple located in the heart of Phnom Penh. It is one of the oldest temples in the city and is known for its stunning architecture and serene atmosphere. Visitors can explore the temple grounds, admire the intricate carvings and statues, and learn about the history and significance of this sacred site.",
+    "about_description_2" : "The temple is a popular destination for both locals and tourists, offering a peaceful retreat from the bustling city. It is also a place of worship, where visitors can observe monks in their daily rituals and participate in traditional ceremonies. The Golden Temple is a must-visit attraction for anyone interested in Cambodian culture and spirituality.",
+    
+    "gallery": [
+      "./img/goldentemp.jpg",
+      "./img/golden/1.jpg",
+      "./img/golden/2.jpg",
+      "./img/golden/3.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Temples & landmarks",
+    "name": "Independence Monument",
+    "image": "./img/Indenpendence .jpeg",
+    "description": "See one of Phnom Penh's most recognizable landmarks and nearby city sights.",
+    "location": "Phnom Penh, Cambodia"
+  },
+  {
+    "id": 3,
+    "category": "Temples & landmarks",
+    "name": "Wat Phnom Daun Penh",
+    "image": "./img/Wat Phnom.webp",
+    "description": "Visit the historic hilltop temple in the heart of Phnom Penh.",
+    "location": "Phnom Penh, Cambodia"
+  },
+  {
+    "id": 4,
+    "category": "Temples & landmarks",
+    "name": "National Museum",
+    "image": "./img/the-national-museum-3.jpg",
+    "description": "Explore Cambodian art, history and architecture at the National Museum.",
+    "location": "Phnom Penh, Cambodia"
+  },
+  {
+    "id": 5,
+    "category": "City & leisure",
+    "name": "PH Euro Park",
+    "image": "./img/euro-park-river.jpg",
+    "description": "Enjoy a relaxed city and leisure stop with private transportation.",
+    "location": "Phnom Penh, Cambodia"
+  },
+   {
+    "id": 6,
+    "category": "City & leisure",
+    "name": "Koh Norea",
+    "image": "./img/kohrea.jpg",
+    "description": "Discover Koh Norea and enjoy views around the riverside area.",
+    "location": "Phnom Penh, Cambodia"
+  },
+  {
+    "id": 7,
+    "category": "City & leisure",
+    "name": "Garden City Water Park",
+    "image": "./img/pool-party-on-monday.jpg",
+    "description": "A fun leisure option for visitors looking for a relaxed day out.",
+    "location": "Phnom Penh, Cambodia"
+  },
+  {
+    "id": 8,
+    "category": "City & leisure",
+    "name": "Central Market",
+    "image": "./img/Central Market.png",
+    "description": "Explore Phnom Penh's famous Central Market for shopping and local atmosphere.",
+    "location": "Phnom Penh, Cambodia"
+  },
+  {
+    "id": 9,
+    "category": "Nature, islands & markets",
+    "name": "Oudong Mountain",
+    "image": "./img/oudong.jpg",
+    "description": "Take a private day trip to Oudong and explore its historic surroundings.",
+    "location": "Oudong, Cambodia"
+  },
+  {
+    "id": 10,
+    "category": "Nature, islands & markets",
+    "name": "Silk Island",
+    "image": "./img/Silk Island .jpg",
+    "description": "Escape the busy city and experience the quieter rural side of Cambodia.",
+    "location": "Kandal, Cambodia"
+  },
+  {
+    "id": 11,
+    "category": "Nature, islands & markets",
+    "name": "Russian Market",
+    "image": "./img/Russian.jpg",
+    "description": "Explore one of Phnom Penh's most popular markets for shopping and local food.",
+    "location": "Phnom Penh, Cambodia"
+  },
+  {
+    "id": 12,
+    "category": "Nature, islands & markets",
+    "name": "Phnom Ta Mao Zoo",
+    "image": "./img/Zoo.jpg",
+    "description": "A nature and wildlife day-trip option outside Phnom Penh.",
+    "location": "Takeo, Cambodia"
+  }
+]

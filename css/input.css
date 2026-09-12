@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette */
+  --color-ink: #241C15;
+  --color-paper: #F6F1E6;
+  --color-gold: #C79A3D;
+  --color-gold-deep: #A87C27;
+  --color-saffron: #B0472B;
+  --color-river: #1F5C56;
+  --color-muted: #6E6355;
+  --color-line: #E4DAC7;
+
+  /* Type */
+  --font-display: "Fraunces", serif;
+  --font-body: "Public Sans", sans-serif;
+}
+
+/* ---- Site-specific styles that aren't plain utility classes ---- */
+
+body {
+  font-family: var(--font-body);
+}
+
+.rule-dash {
+  border-top: 1px dashed var(--color-line);
+}
+
+.gallery-item img {
+  transition: opacity 0.2s ease;
+}
+
+/* Hero photo "settle" animation (subtle entrance, respects reduced motion) */
+@keyframes settle {
+  from {
+    opacity: 0;
+    transform: translateY(10px) rotate(var(--rot, 0deg));
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(var(--rot, 0deg));
+  }
+}
+
+.settle-1,
+.settle-2,
+.settle-3 {
+  animation: settle 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  transform: rotate(var(--rot, 0deg));
+}
+
+.settle-1 { animation-delay: 0.05s; }
+.settle-2 { animation-delay: 0.2s; }
+.settle-3 { animation-delay: 0.35s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .settle-1, .settle-2, .settle-3 {
+    animation: none;
+    transform: rotate(var(--rot, 0deg));
+  }
+}
